@@ -12,13 +12,14 @@
 <body>
     <header>
         <span>Weather App</span>
+    
     </header>
-    <main>
-        <form>
-            <input class="input-search" type="text" placeholder="Procurar" required/>
-            <button class="button" onclick="clickButton()">Buscar</button>
+    <div>
+        <form onsubmit="clickButton(event)">
+            <input class="input-search" id="nome-cidade" type="text" placeholder="Nome da cidade" required/>
+            <button class="button" type="submit">Buscar</button>
         </form>
-    </main>
+    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="assets/script/main.js"></script>
